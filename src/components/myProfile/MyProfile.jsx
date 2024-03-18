@@ -200,12 +200,12 @@ const MyProfile = () => {
                                 {bookmarkedProperties?.length > 0 ? bookmarkedProperties?.map((bookmarkedProperty) => (
                                     <div key={bookmarkedProperty._id} className={classes.property}>
                                         <Link to={`/propertyDetail/${bookmarkedProperty._id}`} className={classes.imgContainer}>
-                                            <img src={`https://localhost:5000/propertyDetail/images/${bookmarkedProperty?.img}`} alt="" />
+                                            <img src={`https://realestate-backend-ru8e.onrender.com/images/${bookmarkedProperty?.img}`} alt="" />
                                         </Link>
                                         <div className={classes.details}>
                                             <div className={classes.priceAndOwner}>
                                                 <span className={classes.price}>$ {bookmarkedProperty.price}</span>
-                                                <img src={person} className={classes.owner} />
+                                               
                                             </div>
                                             <div className={classes.moreDetails}>
                                                 <span>{bookmarkedProperty?.beds} <FaBed className={classes.icon} /></span>
