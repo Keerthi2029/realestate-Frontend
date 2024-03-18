@@ -52,12 +52,13 @@ const Allproperty = () => {
                                 {listedProperties?.length > 0 ? listedProperties?.map((listedProperty) => (
                                     <div key={listedProperty._id} className={classes.property}>
                                         <Link to={`/propertyDetail/${listedProperty._id}`} className={classes.imgContainer}>
-                                            <img src={`https://backbone-of-homzspot.onrender.com/images/${listedProperty?.img}`} alt="" />
+                                            <img src={`https://realestate-backend-ru8e.onrender.com/images/${listedProperty?.img}`} alt="" />
+                                            
                                         </Link>
                                         <div className={classes.details}>
                                             <div className={classes.priceAndOwner}>
                                                 <span className={classes.price}>Rs. {listedProperty.price}</span>
-                                                {/* <img src={user?.profileImg ? `http://localhost:5000/images/${user?.profileImg}` : person} className={classes.owner} /> */}
+                                                {/* <img src={user?.profileImg ? `https://realestate-backend-ru8e.onrender.com/images/${user?.profileImg}` : person} className={classes.owner} /> */}
                                             </div>
                                             <div className={classes.moreDetails}>
                                                 <span>{listedProperty?.beds} <FaBed className={classes.icon} /></span>
@@ -87,7 +88,7 @@ const Allproperty = () => {
                                 {bookmarkedProperties?.length > 0 ? bookmarkedProperties?.map((bookmarkedProperty) => (
                                     <div key={bookmarkedProperty._id} className={classes.property}>
                                         <Link to={`/propertyDetail/${bookmarkedProperty._id}`} className={classes.imgContainer}>
-                                            <img src={`https://backbone-of-homzspot.onrender.com/images/${bookmarkedProperty?.img}`} alt="" />
+                                            <img src={`https://localhost:5000/propertyDetail/images/${bookmarkedProperty?.img}`} alt="" />
                                         </Link>
                                         <div className={classes.details}>
                                             <div className={classes.priceAndOwner}>

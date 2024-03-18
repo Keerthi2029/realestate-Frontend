@@ -160,7 +160,7 @@ const Navbar = () => {
             <>
 
               <span className={classes.username} onClick={() => setShowModal(prev => !prev)}>Hello {user.username}! &nbsp;
-                <img style={{ width: "40px" }} className="rounded-circle" src={user?.profileImg ? `http://localhost:5000/images/${user?.profileImg}` : person} />
+                {/* <img style={{ width: "40px" }} className="rounded-circle" src={user?.profileImg ? `https://realestate-backend-ru8e.onrender.com/images/${user?.profileImg}` : person} /> */}
               </span>
 
               {showModal && (

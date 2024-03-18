@@ -120,7 +120,7 @@ const FeaturedProperties = () => {
               <div key={property._id} className={classes.featuredProperty}>
                 <Link to={`/propertyDetail/${property._id}`} className={classes.imgContainer}>
                   <img
-                    src={property.img ? `http://localhost:5000/images/${property.img}` : img}
+                    src={property.img ? `https://realestate-backend-ru8e.onrender.com/images/${property.img}` : img}
                     alt=""
                   />
                 </Link>
@@ -133,7 +133,7 @@ const FeaturedProperties = () => {
 
 
 
-      <div style={divStyle} >
+      {/* <div style={divStyle} >
 
         <h1 style={{ color: " #333" }}>Special Limited Offer!</h1>
         <p>Hurry up! This offer expires in: </p>
@@ -154,7 +154,7 @@ const FeaturedProperties = () => {
           <div>
     </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={classes.container}>
         <div className={classes.wrapper}></div>

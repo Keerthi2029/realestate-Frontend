@@ -43,7 +43,7 @@ const Signup = () => {
         formData.append('filename', filename)
         formData.append('image', photo)
 
-        await fetch(`http://localhost:5000/upload/image`, {
+        await fetch(`https://realestate-backend-ru8e.onrender.com/upload/image`, {
           headers: {
             'Authorization': `Bearer ${token}`
           },
